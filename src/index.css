@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", ui-serif, "Georgia", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --color-cream: #faf6f0;
+  --color-cream-dark: #f3ece1;
+  --color-terracotta: #d9713c;
+  --color-terracotta-dark: #c15f2d;
+  --color-ink: #2c2620;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+@keyframes flip-in {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+.animate-flip-in {
+  animation: flip-in 0.6s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
