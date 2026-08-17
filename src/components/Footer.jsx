@@ -1,5 +1,3 @@
-import { Sprout } from 'lucide-react'
-
 const columns = [
   { title: 'Shop', links: ['Books', 'Collections', 'Activity Kits'] },
   { title: 'Learn', links: ['Topics', 'Parent Tips', 'Workshops'] },
@@ -13,7 +11,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-[1.5fr_repeat(4,1fr)] gap-8 pb-10">
         <div>
           <p className="font-serif text-lg mb-2 flex items-center gap-2">
-            <Sprout className="w-5 h-5 text-terracotta" strokeWidth={1.75} /> Little Feelings
+            <img src="/logo.png" alt="Little Feelings" className="w-7 h-7" /> Little Feelings
           </p>
           <p className="text-xs text-ink/50 max-w-xs leading-relaxed">
             Strong Hearts &amp; Calm Minds. Made with care in India.

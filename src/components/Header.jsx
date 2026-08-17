@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Sprout, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 const links = [
   { label: 'Books', href: '/#books' },
@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 bg-cream/90 backdrop-blur border-b border-ink/10">
       <Link to="/" className="flex items-center gap-2 font-serif text-xl">
-        <Sprout className="w-5 h-5 text-terracotta" strokeWidth={1.75} />
+        <img src="/logo.png" alt="Little Feelings" className="w-8 h-8" />
         Little Feelings
       </Link>
       <nav className="hidden md:flex items-center gap-10 text-[15px] text-ink/70">
